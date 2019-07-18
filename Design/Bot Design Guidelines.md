@@ -1,5 +1,5 @@
 ## Mind Map Design
-1. Use shapes/nodes as per the legends. Ref. file Bot Mind Map Legends.jpg
+1. Use shapes/nodes as per the legends. Ref. file Bot Mind Map Legends.jpg [Contribution guidelines for this project](Desin/Bot Mind Map Legends.jpg)
 2. Split the flow in small tasks and call it states. Give number to each state. make sure to have one state per page. 
 3. Spliting the flow in multiple states will make it readable and easy to mantain.
 4. Keep only one state per page
