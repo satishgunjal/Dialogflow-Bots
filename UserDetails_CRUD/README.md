@@ -25,6 +25,8 @@
 - Webhook is enabled for last intent 'GetmobileNumber'
 - Action name is 'UserDetails_CRUD'
 - Using VS Code and Nodejs for coding. I will also publish the python webhook code soon.
+- EnableWebhookForAgent ![EnableWebhookForAgent](/Images/EnableWebhookForAgent.JPG)
+- EnableWebhookForIntent ![EnableWebhookForIntent](/Images/EnableWebhookForIntent.JPG)
 
 ## Using MongoDB
 - I have mongoDB installed my PC. Or one can use mongoDb Atlas its free as of now.
