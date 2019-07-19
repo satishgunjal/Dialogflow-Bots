@@ -7,6 +7,7 @@
   For more details about ngrok ref. https://ngrok.com/download
 - Since this demo app I have also created separate route to test each CRUD operation.
   - Create> http://localhost:1234/users/create
+  -![GitHub Logo](/images/logo.png)
   
 - The state machine design approach. Spliting the flow in multiple sates.
   - Naming conventions. Control the disply order of the intent in Dialogflow
