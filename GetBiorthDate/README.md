@@ -1,5 +1,3 @@
-Pending- verify birth year and show the final date. test for birth year like 1234.
-
 ## Important Points
 1. Updating the context from webhook
 2. Updating the parameters from webhook
