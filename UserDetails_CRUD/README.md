@@ -19,7 +19,7 @@
 - For every user input one default attempt and max two tries are allowed.
 - In this Bot I have tried the handle it using custom fallback intent. One can use slot filling feature but it dont have any option to come out of loop if user keep making mistakes.
 - This approach increases the number on intents required. For every user input with 3 max tries we will need 3 intent and 3 fallback intents!!
-- We can reduce the number of intent required to 2 using webhooks. I will publish that bot soon.
+- We can reduce the number of intent required to 2 using webhooks. Please refer 'GetBirthYear' state in 'GetBirthDate' bot.
 
 ## Using webhook for CRUD operations.
 - Webhook is enabled for last intent 'GetmobileNumber'
