@@ -26,3 +26,7 @@
    Note: NodeJs code is above tutorial uses API V1 sysntx.
 2. Youtube- Dialogflow webhook 101- https://www.youtube.com/playlist?list=PLJKszJbOREcVPJxJEfpj3CTqDEm1BQHuP
 3. For V2 webhook response fromat ref. https://dialogflow.com/docs/reference/v1-v2-migration-guide-fulfillment#webhook_responses
+
+## Using ngrok
+- To test webhook integration, we need public url.
+- You can host your code on cloud or can use ngrok for testing. I prefer ngrok
