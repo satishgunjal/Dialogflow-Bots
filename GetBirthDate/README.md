@@ -10,6 +10,11 @@
 9. Intent webhook will verify the input value where fallback intent webhook will increase the 'noOfTries' counter.
 10. Only create the parameters which are used to extract the values from training phrases. If parameter like 'noOfTries' is not used to extract any value then dont create it in Dialogflow. Dialoglfow will initialise the values of all the parameter whenever that particular intent is hit. Since 'noOfTries' parameter value is not comming from training phrases, Dialogflow will always initialise it with 'null'. So every time we read the value of 'noOfTries' from 'session_vars' it will be 'null'
 11. To handle this create the parameter like 'noOfTries' inside webhook under context 'session_vars'. It will be avilable throughout the duration of chat and Dialogflow wont reset it after intent hits.
+12. Since at the start of the flow 'noOfTries' will be '0'. Create this as parameter in 'Default Welcome Intent'. It's required so that dialogflow will create parameters in outputcontext. Refer below exmple. First outputContexts dont have 'parameters' and second outputContext have 'parameters'
+
+dialogflow_webhook_request()> outputContexts= [{"name":"projects/ebldia-ejeoog/agent/sessions/*.*.*.*/contexts/awaiting_banking_choice","lifespanCount":1},{"name":"projects/ebldia-ejeoog/agent/sessions/*.*.*.*/contexts/session_vars","lifespanCount":100},{"name":"projects/ebldia-ejeoog/agent/sessions/*.*.*.*/contexts/awaiting_main_menu_choice"}]
+
+dialogflow_webhook_request()> outputContexts= [{"name":"projects/ebldia-ejeoog/agent/sessions/*.*.*.*/contexts/awaiting_banking_choice","lifespanCount":1},{"name":"projects/ebldia-ejeoog/agent/sessions/*.*.*.*/contexts/session_vars","lifespanCount":100,"parameters":{"noOfTries":"0","noOfTries.original":""}},{"name":"projects/ebldia-ejeoog/agent/sessions/*.*.*.*/contexts/awaiting_main_menu_choice","parameters":{"noOfTries":"0","noOfTries.original":""}}]
 
 ## Important Points About Webhook Code
 1. I amusing API V2 only. Please refer Dialogflow documentation for V2 API format.
